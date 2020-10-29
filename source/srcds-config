@@ -1,0 +1,10 @@
+Source DS
+==================
+
+./steamcmd.sh +login anonymous +force_install_dir ./css/ +app_update 232330 validate +quit
+cd css
+touch cstrike/cfg/server.cfg
+cp cstrike/cfg/mapcycle_default.txt cstrike/cfg/mapcycle.txt
+cp cstrike/cfg/motd_default.txt cstrike/cfg/motd.txt
+cp cstrike/cfg/motd_text_default.txt cstrike/cfg/motd_text.txt
+./srcds_run -game cstrike +maxplayers 16 +map de_dust +sv_setsteamaccount 6A56E87288B008E16A950D9E3A4BE24B
