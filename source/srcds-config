@@ -7,4 +7,6 @@ touch cstrike/cfg/server.cfg
 cp cstrike/cfg/mapcycle_default.txt cstrike/cfg/mapcycle.txt
 cp cstrike/cfg/motd_default.txt cstrike/cfg/motd.txt
 cp cstrike/cfg/motd_text_default.txt cstrike/cfg/motd_text.txt
-./srcds_run -game cstrike +maxplayers 16 +map de_dust +sv_setsteamaccount token_id
+echo './srcds_run -game cstrike +maxplayers 16 +map de_dust +sv_setsteamaccount token_id' > run.sh
+chmod +x run.sh
+./run.sh
